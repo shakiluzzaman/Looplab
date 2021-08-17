@@ -1,0 +1,245 @@
+$body__bg: #333;
+$font__color: #fff;
+$color__primary: #008ed6;
+
+body {
+    background-color: $body__bg;
+    color: $font__color;
+}
+.navbar {
+    background-color: #292b2c;
+    border-bottom: 3px solid $color__primary;
+    opacity: 0.7;
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .nav-link {
+        color: rgba(255, 255, 255, 0.5);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+    i {
+        color: $color__primary;
+    }
+}
+
+#banner {
+    background: url(../img/home.jpg);
+    min-height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @media(max-width: 576px) {
+        min-height: 0;
+    }
+
+    .home-inner {
+        padding: 150px 0 50px;
+
+        .title {
+            @media(max-width: 992px) {
+                text-align: center;
+            }
+            @media(max-width: 576px) {
+                font-size: 36px;
+            }
+        }
+
+        .description {
+            @media(max-width: 1200px) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .dark-overlay {
+        background: rgba(0,0,0,0.7);
+        min-height: 900px;
+        @media(max-width: 576px) {
+            min-height: 0;
+        }
+    }
+
+    .check_icon {
+        i {
+            background-color: $font__color;
+            color: $color__primary;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            border-radius: 5px;
+        }
+    }
+
+    .card-form {
+        opacity: 0.8;
+    }
+}
+
+#explore {
+    padding: 63px 0 76px;
+    @media(max-width: 992px) {
+        padding: 50px 0 70px;
+    }
+    .display-4 {
+        margin-bottom: 20px;
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+}
+
+#explore-main {
+    padding: 120px 0;
+    @media(max-width: 992px) {
+        padding: 70px 0 20px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .description {
+        @media(max-width: 1200px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .img-fluid {
+        @media(max-width: 992px) {
+            margin-bottom: 50px;
+        }
+    }
+    .explore_icon {
+        i {
+            background-color: $body__bg;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font__color;
+            font-size: 26px;
+            border-radius: 5px;
+        }
+    }
+}
+
+#create {
+    padding: 66px 0 74px;
+    @media(max-width: 992px) {
+        padding: 45px 0 62px;
+    }
+    .display-4 {
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+}
+
+#create-main {
+    padding: 90px 0 60px;
+    @media(max-width: 992px) {
+        padding: 70px 0 60px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+    .creat-main_icon {
+        i {
+            background-color: $font__color;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color__primary;
+            font-size: 26px;
+            border-radius: 5px;
+        }
+    }
+
+    .description {
+        @media(max-width: 1200px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .img-fluid {
+        @media(max-width: 992px) {
+            margin-top: 50px;
+        }
+    }
+}
+
+#share {
+    padding: 70px 0 70px;
+    @media(max-width: 992px) {
+        padding: 50px 0 60px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+}
+
+#share-main {
+    background-color: $font__color;
+    padding: 100px 0 70px;
+    @media(max-width: 992px) {
+        padding: 70px 0 20px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .img-fluid {
+        @media(max-width: 992px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .share-main_icon {
+        i {
+            background-color: $body__bg;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font__color;
+            font-size: 26px;
+            border-radius: 5px;
+        }
+    }
+
+    .description {
+        @media(max-width: 1200px) {
+            br {
+                display: none;
+            }
+        }
+    }
+}
